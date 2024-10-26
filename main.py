@@ -8,14 +8,14 @@ from bs4 import BeautifulSoup
 
 
 # 从测试号信息获取
-appID = ""
-appSecret = ""
+appID = "wxd50eee5e1aa07285"
+appSecret = "7e04d0fc3f061381a89d2c6caa41b372"
 #收信人ID即 用户列表中的微信号，见上文
-openId = ""
+openId = "ojDVn6djh3O2TPKMCl5qgJ9uqFog"
 # 天气预报模板ID
-weather_template_id = ""
+weather_template_id = "Svlvm0VxxMXOLNSeAQDhpizQtdqtQ9nNu-a_oIgBPOc"
 # 时间表模板ID
-timetable_template_id = ""
+timetable_template_id = "N73l1mKy2a6jvhAJxejhFJXL3gLjcFjUTZqaRb9AzfM"
 
 
 def get_weather(my_city):
@@ -156,10 +156,10 @@ def timetable(message):
 
 
 if __name__ == '__main__':
-    weather_report("青岛")
+    weather_report("武汉")
     # timetable("第二教学楼十分钟后开始英语课")
 
-    # schedule.every().day.at("18:30").do(weather_report, "南京")
+    schedule.every().day.at("8:00").do(weather_report, "武汉")
     # schedule.every().monday.at("13:50").do(timetable, "第二教学楼十分钟后开始英语课")
     #while True:
     #    schedule.run_pending()
